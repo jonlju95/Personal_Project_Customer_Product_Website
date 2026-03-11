@@ -1,4 +1,4 @@
-package com.hobby.webApp.entity;
+package com.productservice.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

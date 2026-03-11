@@ -1,4 +1,4 @@
-package com.hobby.webApp.dto.request;
+package com.productservice.dto.request;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

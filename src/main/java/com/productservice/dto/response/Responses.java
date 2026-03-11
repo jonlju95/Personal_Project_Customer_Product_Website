@@ -1,4 +1,4 @@
-package com.productservice.dto;
+package com.productservice.dto.response;
 
 import com.productservice.entity.ActivationKey;
 import com.productservice.entity.Product;
@@ -10,6 +10,9 @@ import java.time.Instant;
 import java.util.UUID;
 
 public class Responses {
+    public record AuthResponse(String token, String email, String username, String role) {
+    }
+
     public record UserResponse(UUID id, String email, String username, String role, Instant createdAt) {
         public static UserResponse from(User user) {
             return new UserResponse(user.getId(), user.getEmail(), user.getUsername(),
